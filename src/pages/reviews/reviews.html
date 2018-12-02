@@ -3,18 +3,17 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Locality Review</ion-title>
+    <ion-title>Marathahalli</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
-  <ion-searchbar animated="true" autocomplete="on" (ionInput)="search($event)">
-  </ion-searchbar>
+  <h2 class="margin-left-10">Bangalore, India</h2>
   <ion-card (click)="navigateToReviews()">
     <ion-item>
       <ion-avatar item-start>
         <img src="./assets/imgs/world-location.png">
       </ion-avatar>
-      <h2>Marathahalli</h2>
+      <h2>Good area!</h2>
       <p>
         <ion-icon name="ios-star" color="gold"></ion-icon>
         <ion-icon name="ios-star" color="gold"></ion-icon>
@@ -23,15 +22,13 @@
         <ion-icon name="ios-star-outline"></ion-icon>
       </p>
     </ion-item>
-    <img src="./assets/imgs/marat.jpg"/>
+    <img src="./assets/imgs/marat.jpg" />
     <ion-card-content>
-      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy<span class="triple-dot">...</span></p>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
     </ion-card-content>
     <ion-row class="margin-left-10">
       <ion-col>
-        <ion-note>
-          Bangalore, India
-        </ion-note>
+        <button ion-button outline color="green">Expand</button>
       </ion-col>
     </ion-row>
   </ion-card>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ReviewsPage } from '../reviews/reviews';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +12,11 @@ export class HomePage {
 
   }
 
+  search(ev) {
+  	
+  }
+
+  navigateToReviews() {
+  	this.navCtrl.push(ReviewsPage);
+  }
 }

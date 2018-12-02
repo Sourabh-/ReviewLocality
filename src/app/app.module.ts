@@ -2,28 +2,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
-import { MyApp } from './app.component';
+import { SharedModule } from '../shared/shared.module';
+import { LocalityReviewApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { ReviewsPage } from '../pages/reviews/reviews';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-    MyApp,
+    LocalityReviewApp,
     HomePage,
-    ListPage
+    ReviewsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(LocalityReviewApp),
+    SharedModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    LocalityReviewApp,
     HomePage,
-    ListPage
+    ReviewsPage
   ],
   providers: [
     StatusBar,
